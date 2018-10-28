@@ -5,8 +5,8 @@ import SearchButton from '../containers/search-button';
 
 const SearchBar = () => {
     return (
-            <Row>
-                <Col xs={{ size: 7, offset: 1}}>
+            <Row className="mt-5">
+                <Col xs={{ size: 5, offset: 3}}>
                     <SearchInput />
                 </Col>
                 <Col xs={{ size: 4}}>
@@ -15,6 +15,5 @@ const SearchBar = () => {
             </Row>
     )  
 }
-
 
 export default SearchBar;
