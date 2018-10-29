@@ -7,6 +7,6 @@ export const fetchNewWeatherData = (city) => {
         const url = "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=metric&APPID=fb1c454be88a26a704176c20fe3879d3";
         return fetch(url)    
                 .then(results => results.json())
-                .then(data => {console.log(data); dispatch({ type:"FETCH_NEW_WEATHER", payload: data})})
+                .then(data => {console.log("New five Day forecast :", data); dispatch({ type:"FETCH_NEW_WEATHER", payload: data})})
     }
 }

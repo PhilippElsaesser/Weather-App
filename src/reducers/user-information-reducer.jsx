@@ -1,8 +1,6 @@
-import { GEOLOCATE_USER } from '../actions/geolocate-user';;
-
-export default function(state=[], action) {
+export default function(state=null, action) {
     switch (action.type) {
-        case GEOLOCATE_USER:
+        case "GEOLOCATE_USER":
             return action.payload;
         default:
             return state;

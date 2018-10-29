@@ -6,7 +6,6 @@ import { connect } from 'react-redux';
 class FiveDays extends Component {
 
     createWeatherCards() {
-        console.log(this.props.fiveDays)
             return this.props.fiveDays.map((day, index) => {
                 return (
                     <Col xs="2" key={index}>
@@ -28,7 +27,7 @@ class FiveDays extends Component {
 
 function mapStateToProps(state) {
     return {
-        fiveDays: state.weatherData.list.filter((data,index) => index%8 === 0) ,
+        fiveDays: state.weatherData.list.filter((data,index) => index%8 === 0),
     }
 }
 

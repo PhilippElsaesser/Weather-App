@@ -11,27 +11,44 @@ class WeatherCard extends Component {
 
     translateWeatherIcon(string) {
         switch (string) {
-            case ('01d' || '01n'):
+            case '01d':
                 return "http://openweathermap.org/img/w/01d.png";
-            case ('02d' || '02n'):
+            case '02d':
                 return "http://openweathermap.org/img/w/02d.png";
-            case ('03d' || '03n'):
+            case '03d':
                 return "http://openweathermap.org/img/w/03d.png";
-            case ('04d' || '04n'):
+            case '04d':
                 return "http://openweathermap.org/img/w/04d.png";
-            case ('09d' || '09n'):
+            case '09d':
                 return "http://openweathermap.org/img/w/09d.png";
-            case ('10d' || '10n'):
+            case '10d':
                 return "http://openweathermap.org/img/w/10d.png";
-            case ('11d' || '11n'):
+            case '11d':
                 return "http://openweathermap.org/img/w/11d.png";
-            case ('13d' || '13n'):
+            case '13d':
                 return "http://openweathermap.org/img/w/13d.png";
-            case ('50d' || '50n'):
+            case '50d':
+                return "http://openweathermap.org/img/w/50d.png";
+            case '01n':
+                return "http://openweathermap.org/img/w/01d.png";
+            case '02n':
+                return "http://openweathermap.org/img/w/02d.png";
+            case '03n':
+                return "http://openweathermap.org/img/w/03d.png";
+            case '04n':
+                return "http://openweathermap.org/img/w/04d.png";
+            case '09n':
+                return "http://openweathermap.org/img/w/09d.png";
+            case '10n':
+                return "http://openweathermap.org/img/w/10d.png";
+            case '11n':
+                return "http://openweathermap.org/img/w/11d.png";
+            case '13n':
+                return "http://openweathermap.org/img/w/13d.png";
+            case '50n':
                 return "http://openweathermap.org/img/w/50d.png";
             default:
                 return "";
-
         }
     }
     
